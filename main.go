@@ -10,5 +10,9 @@ var (
 )
 
 func main() {
-	fmt.Println(name, version)
+	fmt.Println(Version())
+}
+
+func Version() string {
+	return name + ": " + version
 }
